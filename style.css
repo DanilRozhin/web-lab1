@@ -3,10 +3,10 @@ html {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
     align-items: center;
-    padding: 10px 20px;
+    padding: 7px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,12 +15,35 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     min-height: 130px;
     z-index: 1000;
-    gap: 20px;
 }
 
 .logo {
     width: 120px;
     height: auto;
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
-    flex-shrink: 0;
+    justify-self: start;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222;
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    grid-column: 2;
+}
+
+.shop-main-name {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 1px;
+    letter-spacing: 1px;
+}
+
+.shop-bottom-name {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
