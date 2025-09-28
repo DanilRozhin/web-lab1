@@ -21,6 +21,7 @@ header {
     min-height: 130px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #333;
 }
 
 main {
@@ -100,6 +101,7 @@ main {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #333;
 }
 
 .product-img {
@@ -111,7 +113,7 @@ main {
 
 .product-title {
     font-size: 1.4rem;
-    margin: 0 0 8px;
+    margin: 3px 0 8px;
     color: #333;
     font-weight: 600;
     line-height: 1.3;
