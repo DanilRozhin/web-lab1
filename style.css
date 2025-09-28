@@ -15,8 +15,8 @@ header {
     grid-template-columns: 120px 1fr 120px;
     align-items: center;
     padding: 7px 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: rgb(15, 15, 17);
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2);
     min-height: 130px;
 }
 
@@ -38,21 +38,21 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #222;
-    font-family: 'Verdana', 'Geneva', sans-serif;
+    color: #ffffff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     grid-column: 2;
 }
 
 .shop-main-name {
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin-bottom: 1px;
     letter-spacing: 1.5px;
 }
 
 .shop-bottom-name {
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     font-weight: 500;
 }
 
@@ -93,21 +93,24 @@ main {
     font-size: 1.4rem;
     margin: 0 0 12px 0;
     color: #333;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1.3;
+    font-family: fantasy;
 }
 
 .product-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #666;
     margin: 0 0 20px 0;
     line-height: 1.5;
     flex-grow: 1;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .product-price {
-    font-size: 1.6rem;
+    font-size: 1.31rem;
     font-weight: bold;
     color: #248500;
     margin: auto;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
