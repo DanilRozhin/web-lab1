@@ -26,10 +26,10 @@ main {
 }
 
 .logo {
-    width: 120px;
     height: auto;
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
     justify-self: start;
+    max-width: 95px;
 }
 
 .header-text {
@@ -41,19 +41,44 @@ main {
     color: #222;
     font-family: 'Verdana', 'Geneva', sans-serif;
     grid-column: 2;
+    padding: 0 10px;
 }
 
 .shop-main-name {
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 5vw, 2.4rem);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin-bottom: 1px;
     letter-spacing: 1.5px;
 }
 
 .shop-bottom-name {
-    font-size: 1.05rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
     font-weight: 500;
+}
+
+.busket {
+    background: #222;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    justify-self: end;
+    max-width: 100px;
+    min-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.busket:hover {
+    background: #4d4d4d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .products-grid {
@@ -81,14 +106,6 @@ main {
     border-radius: 8px;
 }
 
-@media (max-width: 600px) {
-    .product-img {
-        object-fit: contain;
-        background: #f5f5f5;
-        padding: 6px;
-    }
-}
-
 .product-title {
     font-size: 1.4rem;
     margin: 0 0 12px 0;
@@ -108,6 +125,5 @@ main {
 .product-price {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #248500;
     margin: auto;
 }
