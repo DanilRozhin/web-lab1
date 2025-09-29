@@ -14,7 +14,7 @@
                 <h1 class="shop-main-name">С ударом!</h1>
                 <p class="shop-bottom-name">Магазин футбольного инвентаря</p>
             </section>
-            <button class="busket">Корзина</button>
+            <button class="busket" id="openCart">Корзина</button>
         </header>
 
         <main>
@@ -26,7 +26,7 @@
                     <h3 class="product-title">Футбольный мяч</h3>
                     <p class="product-price">6000 ₽</p>
                     <p class="product-description">Уникальный 6-панельный футбольный мяч для тренировок и матчей</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="ball">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
@@ -34,15 +34,15 @@
                     <h3 class="product-title">Бутсы</h3>
                     <p class="product-price">17000 ₽</p>
                     <p class="product-description">Профессиональные бутсы для игры в футбол. Лучший выбор для любого футболиста</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="boots">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
-                    <img src="images/lyungby_shirt.jpg" alt="Футболка FC Lyungby" class="product-img">
+                    <img src="images/lyngby_shirt.jpg" alt="Футболка FC Lyungby" class="product-img">
                     <h3 class="product-title">Футболка FC Lyngby</h3>
                     <p class="product-price">22500 ₽</p>
                     <p class="product-description">Футболка двукратного чемпиона Дании по футболу, домашний комплект</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="lyngby_shirt">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
@@ -50,7 +50,7 @@
                     <h3 class="product-title">Ретро-форма</h3>
                     <p class="product-price">7500 ₽</p>
                     <p class="product-description">Форма из начала 2000-х годов, короткий рукав, футболка-поло, FC Nottingham Forest</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="retro">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
@@ -58,7 +58,7 @@
                     <h3 class="product-title">Футболка ФК Реал Мадрид</h3>
                     <p class="product-price">9500 ₽</p>
                     <p class="product-description">Домашняя футболка ФК Реал Мадрид</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="rm_shirt">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
@@ -66,7 +66,7 @@
                     <h3 class="product-title">Сороконожки</h3>
                     <p class="product-price">9000 ₽</p>
                     <p class="product-description">Прочные, гибкие, легкие. Почувствуй контроль над мячом с первой секунды матча</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="sorokonozhki">Добавить в корзину</button>
                 </article>
 
                 <article class="product-card">
@@ -74,11 +74,25 @@
                     <h3 class="product-title">Ворота</h3>
                     <p class="product-price">1700 ₽</p>
                     <p class="product-description">Ворота для игры в футбол. Прочный материал</p>
-                    <button class="add-busket">Добавить в корзину</button>
+                    <button class="add-busket" data-product="net">Добавить в корзину</button>
                 </article>
                 
             </section>
 
         </main>
+
+        <div class="modal">
+            <div class="modal-main">
+            <h3 class="modal-title">Корзина</h3>
+            
+            <div class="modal-container">
+                <p>Товаров нет</p>
+            </div>
+
+            <button class="modal-close" id="closeCart">&#10006;</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
