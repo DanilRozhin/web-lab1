@@ -81,17 +81,46 @@
 
         </main>
 
-        <div class="modal">
+        <div class="modal" id="cartModal">
             <div class="modal-main">
-            <h3 class="modal-title">Корзина</h3>
-            
-            <div class="modal-container">
-                <p>Товаров нет</p>
-            </div>
-
-            <button class="modal-close" id="closeCart">&#10006;</button>
+                <h3 class="modal-title">Корзина</h3>
+                <div class="modal-container">
+                    <p>Товаров нет</p>
+                </div>
+                <p id="cartWarning" style="color:red; display:none;">Корзина пуста</p>
+                <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+                <button class="modal-close" id="closeCart">&#10006;</button>
             </div>
         </div>
+
+        <div class="modal" id="checkoutModal">
+            <div class="modal-main">
+                <h3 class="modal-title">Оформление заказа</h3>
+                <form id="checkoutForm" novalidate>
+                <label>
+                    Имя:<br>
+                    <input type="text" name="firstName">
+                </label><br><br>
+                <label>
+                    Фамилия:<br>
+                    <input type="text" name="lastName">
+                </label><br><br>
+                <label>
+                    Адрес:<br>
+                    <input type="text" name="address">
+                </label><br><br>
+                <label>
+                    Телефон:<br>
+                    <input type="text" name="phone">
+                </label><br><br>
+                <p id="formError" style="color:red; display:none;">Заполните все поля</p>
+                <button type="submit" class="create-btn">Создать заказ</button>
+                </form>
+                <button class="modal-close" id="closeCheckout">&#10006;</button>
+            </div>
+        </div>
+
+
 
         <script src="script.js"></script>
     </body>
